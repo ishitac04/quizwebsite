@@ -3,12 +3,31 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.mouse-memoirs-regular {
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 .titlewrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: white;
-    height: 19%;
+    height: 15%;
     width: 100%;
     border: 2px solid #000000;
     border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(12, 61, 104);
+    text-transform: uppercase;
 }
 
 .contentwrapper {
@@ -23,7 +42,7 @@ body {
 
 .contentwrapper > div {
     display: flex;               
-    justify-content: center;     
+    justify-content: center;
     align-items: center;         
 }
 
@@ -38,7 +57,7 @@ body {
 
 .margins2 {
     display: flex;
-    justify-content: flex-end; /* shove button right */
+    justify-content: flex-end;
     align-items: center;
     height: 7%;
     width: 100%;
@@ -69,6 +88,9 @@ body {
 }
 .box:hover {
     background-color: rgb(197, 224, 233);
+}
+.box:paused {
+    background-color: blue;
 }
 
 .nextbutton:hover {
