@@ -1,12 +1,10 @@
 const boxes = document.querySelectorAll(".box");
 const next = document.querySelector(".nextbutton");
 const correct = document.getElementById('correct');
-const wrong = document.getElementById('wrong');
 const quizname = document.querySelector(".quizname");
 const question = document.querySelector(".titlewrapper");
 const scoretext = document.querySelector(".score");
 const currentanswers = [];
-const correctanswers = ["42","Hong Kong","Apollo","Madrid","1914"]
 let questionNumber;
 let check = 0;
 let answerclicked;
@@ -18,17 +16,17 @@ const questions = [
     "How many dots are on a pair of dice?", "What country has the highest life expectancy?", "Who is the ancient Greek god of the Sun?", "What is the capital of Spain?", "When did WW1 start?"
 ]
 const answers = [
-    "21","20","24","42",
-    "Japan","Mexico","Hong Kong","Tunisia",
-    "Zeus","Poseidon","Ares","Apollo",
-    "Valencia","Madrid","Barcelona","Tenerife",
-    "1915","1914","1934","1922"
+    "42", "20", "24", "21",
+    "Hong Kong", "Mexico", "Japan", "Tunisia",
+    "Apollo", "Poseidon", "Ares", "Zeus",
+    "Madrid", "Valencia", "Barcelona", "Tenerife",
+    "1914", "1915", "1934", "1922"
 ]
 
 function generateQuestion() {
     remaining = questions.length - usedQuestions;
     if (remaining === 0) {
-        confirm("Out of questions! Score: "+score+". Return to homepage?");
+        alert("Out of questions!");
         return;
     }
     questionNumber = Math.floor(Math.random() * remaining)
@@ -48,21 +46,6 @@ function generateQuestion() {
     }
 
     usedQuestions++;
-    boxes.forEach((box, i) => {
-        box.onclick = () => {
-            answerclicked = i + 1;
-            for (i=0; i<correctanswers.length;i++) {
-                if (box.textContent === correctanswers[i]) {
-                    correct.play();
-                    score++;
-                    scoretext.textContent = "Score: " + score;
-                } else {
-                wrong.play();
-            }
-            }
-            generateQuestion();
-        };
-    });
 }
 
 next.addEventListener("click", generateQuestion);
