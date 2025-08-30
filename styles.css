@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(199, 255, 255);
+}
+
+.titlewrapper {
+    height: 19%;
+    width: 100%;
+    border: 2px solid #000000 ;
+}
+
+.contentwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 60%;
+    width: 100%
+}
+
+.margins {
+    height: 10%;
+    width: 100%;
+    border: 2px solid #000000;
+}
+
+.boxwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+            
+}
+.box {
+    width: 50%;
+    height: 80%;
+    background: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+.subbox {
+    width: 50%;
+    height: 50%;
+    background: rgb(11, 66, 92);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.boxwrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+            
+}
+.box2 {
+    width: 50%;
+    height: 50%;
+    background: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+.subbox2 {
+    width: 50%;
+    height: 50%;
+    background: rgb(11, 66, 92);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.boxwrapper3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+            
+}
+.box3 {
+    width: 50%;
+    height: 50%;
+    background: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+.subbox3 {
+    width: 50%;
+    height: 50%;
+    background: rgb(11, 66, 92);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.boxwrapper4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+            
+}
+.box4 {
+    width: 50%;
+    height: 50%;
+    background: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 25px;
+}
+.subbox4 {
+    width: 50%;
+    height: 50%;
+    background: rgb(11, 66, 92);
+    border: 3px solid black;
+    border-radius: 25px;
+}
