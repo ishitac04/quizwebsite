@@ -13,6 +13,7 @@ let answerclicked;
 let score = 0;
 let usedQuestions=0;
 let remaining=5;
+let back;
 
 const questions = [
     "How many dots are on a pair of dice?", "What country has the highest life expectancy?", "Who is the ancient Greek god of the Sun?", "What is the capital of Spain?", "When did WW1 start?"
@@ -28,7 +29,12 @@ const answers = [
 function generateQuestion() {
     remaining = questions.length - usedQuestions;
     if (remaining === 0) {
-        confirm("Out of questions! Score: "+score+". Return to homepage?");
+        back = confirm("Out of questions! Score: "+score+". Return to homepage?");
+            if (back) {
+                window.location.href = "index.html";
+            } else {
+                location.reload();
+            }
         return;
     }
     questionNumber = Math.floor(Math.random() * remaining)
